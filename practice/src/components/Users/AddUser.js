@@ -42,8 +42,8 @@ function AddUser(props) {
 
     }
     return (
-        <div>
-        {error && <ErrorModal title={error.title} message={error.message} onConfirm={errorHandler}/>}
+        <React.Fragment>
+        {error && (<ErrorModal title={error.title} message={error.message} onConfirm={errorHandler}/>)}
         <Card className={classes.input}>
         <form onSubmit = {addUserHandler}>
             <label htmlFor="username">Username</label>
@@ -54,7 +54,7 @@ function AddUser(props) {
         </form>
         
         </Card>
-        </div>
+        </React.Fragment >
     )
 }
 
