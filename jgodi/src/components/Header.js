@@ -11,9 +11,11 @@ function Header() {
                 </div>
                 <div className={classes["text-box"]}>
                 <h1 class={classes["heading-primary"]}>
-                <span class={classes["heading-primary-main"]}>Jgodi Beats </span>
+                <span class={classes["heading-primary-main"]}>Outdoors </span>
                 <span class={classes["heading-primary-sub"]}>Long Beach, CA</span>
                 </h1>
+
+                <a href="#" className={`${classes.btn} ${classes["btn-white"]} ${classes["btn-animated"]}`}>Discover our tours</a>
                 </div>
             </header>
 
